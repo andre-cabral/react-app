@@ -1,9 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import NotFound from '.';
+import Home from '.';
 
 test('renders learn react link', () => {
-  render(<NotFound />);
-  const element = screen.getByText(/Página não encontrada/i);
-  expect(element).toBeInTheDocument();
+  render(<Home />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
 });
-
