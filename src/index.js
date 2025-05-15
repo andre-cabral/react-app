@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './pages/Home';
+import PageOne from './pages/PageOne';
 import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router";
@@ -11,7 +12,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/page-1" element={<Home />} />
+      <Route path="/page-1" element={<PageOne />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

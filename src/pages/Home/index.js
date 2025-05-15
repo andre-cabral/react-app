@@ -1,9 +1,11 @@
+import NavigationMenu from '../../components/NavigationMenu';
 import logo from '../../images/logo.svg';
 import './style.scss';
 
 function Home() {
   return (
     <div className="app">
+      <NavigationMenu />
       <header className="app__header">
         <img src={logo} className="app__logo" alt="logo" />
         <p>
